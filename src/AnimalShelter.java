@@ -43,10 +43,10 @@ public class AnimalShelter {
                 .filter(musician -> musician instanceof Mover)
                 .map(musician ->(Mover) musician)
                 .forEach(mover -> {
-                System.out.format("Is the musician %s moving?",
-                        mover.getClass().getSimpleName());
-                mover.move();
-        });
+                    System.out.format("Is the musician %s moving?",
+                            mover.getClass().getSimpleName());
+                    mover.move();
+                });
     }
 
     private void howManyLegsMyAnimalsHave() {
