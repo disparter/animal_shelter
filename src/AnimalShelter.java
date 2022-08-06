@@ -39,13 +39,13 @@ public class AnimalShelter {
     }
 
     private void areTheBandMoving() {
-        band.forEach(musician -> {
-            if(musician instanceof Mover){
-                Mover mover = (Mover) musician;
+        band.stream()
+                .filter(musician -> musician instanceof Mover)
+                .map(musician ->(Mover) musician)
+                .forEach(mover -> {
                 System.out.format("Is the musician %s moving?",
-                        musician.getClass().getSimpleName());
+                        mover.getClass().getSimpleName());
                 mover.move();
-            }
         });
     }
 
