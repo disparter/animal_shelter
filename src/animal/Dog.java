@@ -1,3 +1,7 @@
+package animal;
+
+import behavior.Walker;
+
 public class Dog extends Animal implements Walker {
 
     public Dog(){

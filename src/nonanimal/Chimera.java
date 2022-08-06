@@ -1,3 +1,9 @@
+package nonanimal;
+
+import behavior.Flyer;
+import behavior.SoundMaker;
+import behavior.Walker;
+
 public class Chimera implements Flyer, Walker, SoundMaker {
     @Override
     public void fly() {

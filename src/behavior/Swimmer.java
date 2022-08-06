@@ -1,3 +1,5 @@
+package behavior;
+
 public interface Swimmer extends Mover {
     void swim();
 

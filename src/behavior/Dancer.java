@@ -1,3 +1,5 @@
+package behavior;
+
 public interface Dancer extends Mover {
 
     void dance();

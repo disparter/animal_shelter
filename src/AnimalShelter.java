@@ -1,3 +1,15 @@
+import animal.Animal;
+import animal.Bird;
+import animal.Bulldog;
+import animal.Dog;
+import animal.Duck;
+import animal.FrenchBulldog;
+import animal.InjuredLittleDog;
+import behavior.Mover;
+import behavior.SoundMaker;
+import nonanimal.Car;
+import nonanimal.Chimera;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -38,7 +50,7 @@ public class AnimalShelter {
     }
 
     private void howManyLegsMyAnimalsHave() {
-        animais.forEach(animal -> System.out.format("Animal %s - have  %d number of legs\n",
+        animais.forEach(animal -> System.out.format("animal.Animal %s - have  %d number of legs\n",
                 animal.getClass().getSimpleName(),
                 animal.legs));
     }

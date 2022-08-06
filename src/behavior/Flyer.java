@@ -1,3 +1,5 @@
+package behavior;
+
 public interface Flyer extends Mover {
     void fly();
 

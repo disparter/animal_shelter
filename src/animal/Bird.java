@@ -1,24 +1,30 @@
-public class Bird extends Animal implements Walker,Flyer,Dancer,SoundMaker {
+package animal;
+
+import behavior.Dancer;
+import behavior.Flyer;
+import behavior.SoundMaker;
+import behavior.Walker;
+
+public class Bird extends Animal implements Walker, Flyer, Dancer, SoundMaker {
 
 
-    public Bird(){legs = 2;}
+    public Bird(){
+        legs = 2;
+    }
 
     @Override
     public void dance() {
         System.out.println("I can dance as well");
-
     }
 
     @Override
     public void fly() {
         System.out.println("I can fly as well");
-
     }
 
     @Override
     public void walk() {
         System.out.println("I can Walk as well");
-
     }
 
     @Override
@@ -33,7 +39,9 @@ public class Bird extends Animal implements Walker,Flyer,Dancer,SoundMaker {
     }
 
     @Override
-    public String sound() {return "sing";}
+    public String sound() {
+        return "sing";
+    }
 
 }
 

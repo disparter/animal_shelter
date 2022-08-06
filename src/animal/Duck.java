@@ -1,4 +1,10 @@
-public class Duck extends Animal implements Flyer, Walker, Swimmer{
+package animal;
+
+import behavior.Flyer;
+import behavior.Swimmer;
+import behavior.Walker;
+
+public class Duck extends Animal implements Flyer, Walker, Swimmer {
 
     public Duck(){
         legs = 2;

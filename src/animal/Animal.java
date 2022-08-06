@@ -1,4 +1,8 @@
+package animal;
+
+import behavior.SoundMaker;
+
 public abstract class Animal implements SoundMaker {
     int age;
-    int legs;
+    public int legs;
 }
