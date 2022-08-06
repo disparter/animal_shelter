@@ -18,10 +18,23 @@ public class AnimalShelter {
         animalShelter.sing();
 
         animalShelter.howManyLegsMyAnimalsHave();
+        animalShelter.areTheBandMoving();
+
 
         //ENTAO
         //Cachorro vai latir e pato vai fazer quack
 
+    }
+
+    private void areTheBandMoving() {
+        band.forEach(musician -> {
+            if(musician instanceof Mover){
+                Mover mover = (Mover) musician;
+                System.out.format("Is the musician %s moving?",
+                        musician.getClass().getSimpleName());
+                mover.move();
+            }
+        });
     }
 
     private void howManyLegsMyAnimalsHave() {
@@ -33,6 +46,7 @@ public class AnimalShelter {
     private List<SoundMaker> startBand() {
         var result = new ArrayList<SoundMaker>(animais);
         result.add(new Car());
+        result.add(new Chimera());
         return result;
     }
 
