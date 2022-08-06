@@ -55,7 +55,8 @@ public class AnimalShelter {
                 new Bulldog(),
                 new Duck(),
                 new FrenchBulldog(),
-                new InjuredLittleDog());
+                new InjuredLittleDog(),
+                new Bird());
     }
 
     public void sing(){
